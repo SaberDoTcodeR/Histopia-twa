@@ -14,6 +14,14 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="App">
         {!isConnected && <Login />}
+        {
+          isConnected && (
+            <button onClick={() => {
+              localStorage.removeItem("connection")
+              window.location.reload()
+            }}>Disconnect</button>
+          )
+        }
       </div>
     </QueryClientProvider>
   )
