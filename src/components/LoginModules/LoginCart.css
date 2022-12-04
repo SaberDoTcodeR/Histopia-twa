@@ -1,0 +1,137 @@
+.LC-container {
+    height: 13vw;
+    width: 26vw;
+    background-image: url('../../images/NewLogin/CartBack.png');
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(252, 251, 251, 0.94);
+    backdrop-filter: blur(20px);
+    border-radius: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .LC-type-icon-box {
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    left: -5.5vw;
+    top: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .LC-type-icon {
+    width: 85%;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+  
+  .LC-text-box {
+    height: 60%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .LC-text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    text-shadow: none;
+    font-size: 1vw;
+    line-height: 150%;
+    text-align: center;
+    color: #575757;
+    margin: 0;
+  }
+  
+  .LC-button-box {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .LC-button {
+    width: 14.1vw;
+    height: 2.8vw;
+    left: 1219px;
+    top: 454px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in-out;
+  }
+  .LC-button:hover {
+    box-shadow: 0px 4px 4px rgba(50, 10, 68, 0.75);
+  }
+  .LC-button:active {
+    transition: 0.09s ease-in-out;
+  }
+  .LC-button-text {
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 12vw;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .LC-container {
+      height: 30%;
+      width: 90%;
+      border-radius: 8vw;
+    }
+  
+    .LC-type-icon-box {
+      height: 50%;
+      width: 30vw;
+      position: absolute;
+      left: -4vw;
+      top: 25%;
+    }
+    .LC-type-icon {
+      width: 100%;
+    }
+  
+    .LC-text-box {
+      position: relative;
+      left: 10%;
+    }
+    .LC-text {
+      font-size: 3vw;
+    }
+  
+    .LC-button-box {
+      height: 40%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+    .LC-button {
+      width: 40vw;
+      height: 10vw;
+      position: absolute;
+      left: 35%;
+      top: unset;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+      transition: 0.5s ease-in-out;
+    }
+    .LC-button-text {
+      user-select: none;
+      -webkit-user-drag: none;
+      width: 30vw;
+    }
+  }
+  
