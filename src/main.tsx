@@ -4,6 +4,7 @@ import { RemoteConnectPersistance, TonhubConnectProvider } from 'react-ton-x'
 import useLocalStorage from 'use-local-storage'
 import App from './App'
 import './index.css'
+import { BrowserRouter } from 'react-router-dom'
 
 let wasPendingConnectionChecked = false
 
@@ -33,7 +34,9 @@ function Application() {
         setConnectionState(s as RemoteConnectPersistance)
       }}
     >
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </TonhubConnectProvider>
   )
 }
